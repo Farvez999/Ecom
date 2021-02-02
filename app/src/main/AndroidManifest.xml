@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.korearbazar.ecom">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/kb_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/kb_icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".VendorProfile.VendorAddNewProductsActivity">
+        </activity>
+        <activity android:name=".VendorProfile.VendorSettingsActivity"></activity>
+        <activity android:name=".VendorProfile.VendorBulkProductUploadActivity"></activity>
+        <activity android:name=".VendorProfile.VendorWithdrawsActivity"></activity>
+        <activity android:name=".VendorProfile.VendorProductsActivity"></activity>
+        <activity android:name=".VendorProfile.VendorOrderActivity"></activity>
+        <activity
+            android:name=".UserProfile.UserDashboardActivity"
+            android:parentActivityName=".activity.ProfileActivity" />
+        <activity
+            android:name=".VendorProfile.VendorDashboadActivity"
+            android:parentActivityName=".activity.VendorActivity" />
+        <activity android:name=".MyOneSignalActivity" />
+        <activity
+            android:name=".UserProfile.ResetPasswordActivity"
+            android:parentActivityName=".activity.ProfileActivity" />
+        <activity
+            android:name=".UserProfile.EditProfileActivity"
+            android:parentActivityName=".activity.ProfileActivity" />
+        <activity
+            android:name=".UserProfile.AffiliateCodeActivity"
+            android:parentActivityName=".activity.ProfileActivity" />
+        <activity
+            android:name=".UserProfile.FavoriteSellerActivity"
+            android:parentActivityName=".activity.ProfileActivity" />
+        <activity
+            android:name=".UserProfile.MessageActivity"
+            android:parentActivityName=".activity.ProfileActivity" />
+        <activity
+            android:name=".UserProfile.WithdrawActivity"
+            android:parentActivityName=".activity.ProfileActivity" />
+        <activity
+            android:name=".activity.VendorActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".activity.LanguageActivity" />
+        <activity android:name=".activity.VendorRegisterActivity" />
+        <activity android:name=".activity.RelatedProdDetailsActivity" />
+        <activity android:name=".activity.CategoryDetailsActivity" />
+        <activity
+            android:name=".activity.CheckoutActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".activity.CartActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".activity.ProfileActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".activity.SignUpActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".activity.LoginActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".activity.BlogActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".activity.CategoryActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".FirstActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.ItemDetailsActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+    </application>
+
+</manifest>

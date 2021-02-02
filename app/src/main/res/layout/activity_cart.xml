@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.CartActivity">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/orderRecycler"
+        android:layout_above="@+id/txtTotal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></androidx.recyclerview.widget.RecyclerView>
+
+<!--    <TextView-->
+<!--        android:id="@+id/txtClear"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_above="@+id/txtTotal"-->
+<!--        android:layout_marginBottom="0dp"-->
+<!--        android:text="Clear"-->
+<!--        android:textSize="20dp"-->
+<!--        android:textStyle="bold"></TextView>-->
+
+    <LinearLayout
+        android:layout_above="@+id/order"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_above="@+id/order"
+            android:padding="5dp"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:text="Total Price : "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></TextView>
+
+        <TextView
+            android:id="@+id/txtTotal"
+            android:padding="5dp"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></TextView>
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/order"
+        android:text="Place Order"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/colorWhite"
+        android:textSize="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableRight="@drawable/ic_arrow_right"
+        android:layout_alignParentBottom="true"></Button>
+
+</RelativeLayout>
