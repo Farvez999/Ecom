@@ -13,13 +13,20 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".VendorProfile.VendorAddNewProductsActivity">
-        </activity>
-        <activity android:name=".VendorProfile.VendorSettingsActivity"></activity>
-        <activity android:name=".VendorProfile.VendorBulkProductUploadActivity"></activity>
-        <activity android:name=".VendorProfile.VendorWithdrawsActivity"></activity>
-        <activity android:name=".VendorProfile.VendorProductsActivity"></activity>
-        <activity android:name=".VendorProfile.VendorOrderActivity"></activity>
+        <activity android:name=".VendorProfile.VendorWCreateActivity"
+            android:parentActivityName=".VendorProfile.VendorWithdrawsActivity"/>
+        <activity
+            android:name=".UserProfile.MessageComposeActivity"
+            android:parentActivityName=".UserProfile.MessageActivity" />
+        <activity
+            android:name=".UserProfile.WithdrawCreateActivity"
+            android:parentActivityName=".UserProfile.WithdrawActivity" />
+        <activity android:name=".VendorProfile.VendorAddNewProductsActivity" />
+        <activity android:name=".VendorProfile.VendorSettingsActivity" />
+        <activity android:name=".VendorProfile.VendorBulkProductUploadActivity" />
+        <activity android:name=".VendorProfile.VendorWithdrawsActivity" />
+        <activity android:name=".VendorProfile.VendorProductsActivity" />
+        <activity android:name=".VendorProfile.VendorOrderActivity" />
         <activity
             android:name=".UserProfile.UserDashboardActivity"
             android:parentActivityName=".activity.ProfileActivity" />

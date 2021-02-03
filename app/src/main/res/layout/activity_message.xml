@@ -17,15 +17,14 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:layout_margin="10dp"
-        android:background="@drawable/rounded_editetext">
+        android:background="@drawable/rounded_editetext2">
 
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:layout_margin="10dp"
-            android:background="@drawable/rounded_editetext">
+            android:layout_margin="10dp">
 
 
             <LinearLayout
@@ -34,13 +33,38 @@
                 android:padding="5dp"
                 android:orientation="vertical">
 
-                <TextView
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="My Message"
-                    android:textSize="25dp"
-                    android:padding="5dp"
-                    android:textColor="@color/colorPrimary"></TextView>
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:text="Message"
+                        android:textSize="20dp"
+                        android:layout_gravity="center"
+                        android:padding="5dp"
+                        android:textColor="@color/colorPrimary"></TextView>
+
+                    <TextView
+                        android:id="@+id/uComposeMessage"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Compose Message!"
+                        android:textSize="18dp"
+                        android:padding="5dp"
+                        android:background="@drawable/rounded_green"
+                        android:textColor="@color/colorWhite"
+                        android:textStyle="bold"></TextView>
+
+                </LinearLayout>
+
+
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -75,79 +99,6 @@
 
         </LinearLayout>
 
-
-        //Withdraw Now
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:background="@drawable/rounded_editetext"
-            android:padding="5dp"
-            android:layout_margin="5dp">
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Compose Message"
-                android:textSize="25dp"
-                android:padding="5dp"
-                android:textColor="@color/colorPrimary"></TextView>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Send Message"
-                    android:textSize="20dp"
-                    android:padding="5dp"
-                    android:textColor="@color/colorPrimary"></TextView>
-
-                <EditText
-                    android:id="@+id/mEmail"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="Email"
-                    android:background="@android:drawable/edit_text"
-                    android:textSize="15dp"
-                    android:padding="5dp"></EditText>
-
-                <EditText
-                    android:id="@+id/mSubject"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="Subject"
-                    android:background="@android:drawable/edit_text"
-                    android:textSize="15dp"
-                    android:padding="5dp"></EditText>
-
-                <EditText
-                    android:id="@+id/mMessage"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="Your Message"
-                    android:background="@android:drawable/edit_text"
-                    android:textSize="15dp"
-                    android:padding="5dp"></EditText>
-
-            </LinearLayout>
-
-
-            <TextView
-                android:id="@+id/mSendMessage"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="Send Message"
-                android:textSize="25dp"
-                android:padding="5dp"
-                android:textColor="@color/colorWhite"
-                android:background="@drawable/rounded_green2"></TextView>
-
-        </LinearLayout>
 
     </LinearLayout>
 

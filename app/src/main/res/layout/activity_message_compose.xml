@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    tools:context="com.korearbazar.ecom.UserProfile.MessageComposeActivity">
+
+    //Withdraw Now
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/rounded_editetext2"
+        android:padding="5dp"
+        android:layout_margin="5dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Compose Message!"
+            android:gravity="center"
+            android:fontFamily="@font/coresans_cr_medium"
+            android:textSize="25dp"
+            android:padding="5dp"
+            android:textColor="@color/colorPrimary"></TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Send Message"
+                android:fontFamily="@font/coresans_cr_medium"
+                android:textSize="20dp"
+                android:padding="5dp"
+                android:textColor="@color/colorBalck"></TextView>
+
+            <EditText
+                android:id="@+id/mEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:background="@android:drawable/edit_text"
+                android:textSize="15dp"
+                android:padding="5dp"></EditText>
+
+            <EditText
+                android:id="@+id/mSubject"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Subject"
+                android:background="@android:drawable/edit_text"
+                android:textSize="15dp"
+                android:padding="5dp"></EditText>
+
+            <EditText
+                android:id="@+id/mMessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Your Message"
+                android:background="@android:drawable/edit_text"
+                android:textSize="15dp"
+                android:padding="5dp"></EditText>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/mSendMessage"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:text="Send Message"
+            android:textSize="25dp"
+            android:padding="5dp"
+            android:gravity="center"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/rounded_green"></TextView>
+
+    </LinearLayout>
+
+</ScrollView>

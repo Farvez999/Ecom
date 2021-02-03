@@ -14,6 +14,22 @@
         android:fillViewport="true">
 
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:fontFamily="@font/coresans_cr_medium"
+                android:gravity="center"
+                android:padding="0dp"
+                android:text="Welcome Vendor Dashboard!"
+                android:textColor="@color/colorBalck"
+                android:textSize="21sp"
+                android:textStyle="bold" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -37,7 +53,7 @@
 
                 <TextView
                     android:id="@+id/vDashboard"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="100dp"
                     android:layout_weight="1"
                     android:text="Dashboard"
@@ -51,7 +67,7 @@
 
                 <TextView
                     android:id="@+id/vOrder"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="100dp"
                     android:layout_weight="1"
                     android:text="Orders"
@@ -80,7 +96,7 @@
 
                 <TextView
                     android:id="@+id/vProducts"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="100dp"
                     android:layout_weight="1"
                     android:text="Products"
@@ -94,7 +110,7 @@
 
                 <TextView
                     android:id="@+id/vWithdraws"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="100dp"
                     android:layout_weight="1"
                     android:text="Withdraws"
@@ -123,11 +139,11 @@
 
                 <TextView
                     android:id="@+id/vBulkProductUpload"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="100dp"
                     android:layout_weight="1"
                     android:text="Bulk Product Upload"
-                    android:textSize="20dp"
+                    android:textSize="15dp"
                     android:textStyle="bold"
                     android:gravity="center"
                     android:layout_margin="5dp"
@@ -137,7 +153,7 @@
 
                 <TextView
                     android:id="@+id/vSettings"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="100dp"
                     android:layout_weight="1"
                     android:text="Settings"
@@ -155,6 +171,8 @@
             </LinearLayout>
 
 
+
+        </LinearLayout>
 
         </LinearLayout>
 

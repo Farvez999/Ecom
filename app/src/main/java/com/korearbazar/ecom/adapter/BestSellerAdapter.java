@@ -66,7 +66,7 @@ public class BestSellerAdapter extends RecyclerView.Adapter<BestSellerAdapter.My
 
             SpannableString ss = new SpannableString(totalPreviousPrice);
             StrikethroughSpan strikethroughSpan = new StrikethroughSpan();
-            ss.setSpan(strikethroughSpan,0,5, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
+//            ss.setSpan(strikethroughSpan,0,5, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
 
             holder.previous_price.setText(ss);
 

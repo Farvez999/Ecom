@@ -17,7 +17,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:layout_margin="10dp"
-            android:background="@drawable/rounded_editetext">
+            android:background="@drawable/rounded_editetext2">
 
 
             <LinearLayout
@@ -30,6 +30,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="All Orders"
+                    android:gravity="center"
                     android:textSize="25dp"
                     android:padding="5dp"
                     android:textColor="@color/colorPrimary"></TextView>

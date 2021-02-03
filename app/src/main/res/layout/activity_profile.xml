@@ -21,226 +21,20 @@
         android:layout_marginTop="10dp"
         android:orientation="vertical">
 
-        <LinearLayout
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="2dp"
-            android:layout_marginRight="10dp"
-            android:orientation="vertical"
-            android:background="@drawable/rounded_editetext">
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Dashboard"
-                android:textSize="25dp"
-                android:gravity="center"
-                android:textColor="@color/colorPrimary"></TextView>
-
-            //Account Info
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Account Information"
-                    android:textSize="25dp"
-                    android:padding="5dp"
-                    android:textColor="@color/colorPrimary"></TextView>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/coresans_cr_medium"
+            android:gravity="center"
+            android:padding="0dp"
+            android:text="Welcome User Dashboard!"
+            android:textColor="@color/colorBalck"
+            android:textSize="21sp"
+            android:textStyle="bold" />
 
 
-                    <TextView
-                        android:id="@+id/ed_username"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/rounded_editetext"
-                        android:drawableLeft="@drawable/ic_perm_"
-                        android:textColorHint="@color/colorGrey"
-                        android:drawablePadding="10dp"
-                        android:hint="Name"
-                        android:padding="12dp"
-                        android:textColor="@color/colorGrey2" />
-                </LinearLayout>
 
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="15dp">
-
-                    <TextView
-                        android:id="@+id/ed_email"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/rounded_editetext"
-                        android:drawableLeft="@drawable/ic_email"
-                        android:textColorHint="@color/colorGrey"
-                        android:drawablePadding="10dp"
-                        android:hint="Name"
-                        android:padding="12dp"
-                        android:textColor="@color/colorGrey2" />
-                </LinearLayout>
-
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="15dp"
-                    android:layout_weight="1">
-
-                    <TextView
-                        android:id="@+id/ed_alternatmob"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/rounded_editetext"
-                        android:drawableLeft="@drawable/ic_phone"
-                        android:textColorHint="@color/colorGrey"
-                        android:drawablePadding="10dp"
-                        android:hint="Phone Number"
-                        android:padding="12dp"
-                        android:textColor="@color/colorGrey2" />
-                </LinearLayout>
-
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="15dp">
-
-
-                    <TextView
-                        android:id="@+id/city"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/rounded_editetext"
-                        android:drawableLeft="@drawable/ic_address"
-                        android:drawablePadding="10dp"
-                        android:hint="City"
-                        android:padding="12dp"
-                        android:textColor="@color/colorGrey2"
-                        android:textColorHint="@color/colorGrey" />
-                </LinearLayout>
-
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="15dp">
-
-
-                    <TextView
-                        android:id="@+id/zip"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/rounded_editetext"
-                        android:drawableLeft="@drawable/ic_zip_icon"
-                        android:textColorHint="@color/colorGrey"
-                        android:drawablePadding="10dp"
-                        android:hint="Zip"
-                        android:padding="12dp"
-                        android:textColor="@color/colorGrey2" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="15dp">
-
-
-                    <TextView
-                        android:id="@+id/address"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/rounded_editetext"
-                        android:drawableLeft="@drawable/ic_address"
-                        android:textColorHint="@color/colorGrey"
-                        android:drawablePadding="10dp"
-                        android:hint="Address"
-                        android:padding="12dp"
-                        android:textColor="@color/colorGrey2" />
-
-            </LinearLayout>
-
-
-            </LinearLayout>
-
-            ///My Balance
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_marginTop="10dp"
-                android:background="@drawable/rounded_editetext">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="My Balance"
-                    android:textSize="25dp"
-                    android:padding="5dp"
-                    android:textColor="@color/colorPrimary"></TextView>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Affiliate Bonus: "
-                        android:textSize="25dp"></TextView>
-
-                    <TextView
-                        android:id="@+id/affiliateBonus"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="3dp"
-                        android:hint="$0"
-                        android:textSize="25dp"></TextView>
-
-                </LinearLayout>
-
-            </LinearLayout>
-
-            //Recent order
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:orientation="vertical"
-                android:background="@drawable/rounded_editetext">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Recent Orders"
-                    android:textSize="30dp"
-                    android:padding="5dp"
-                    android:textColor="@color/colorPrimary"></TextView>
-
-                <androidx.recyclerview.widget.RecyclerView
-                    android:layout_marginBottom="10dp"
-                    android:id="@+id/recentOrderRV"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    tools:listitem="@layout/item_order"></androidx.recyclerview.widget.RecyclerView>
-
-
-            </LinearLayout>
-
-
-    </LinearLayout>
-
-        ////
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -255,8 +49,46 @@
                 android:weightSum="2">
 
                 <TextView
+                    android:id="@+id/userDashboard"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:text="Dashboard"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_margin="5dp"
+                    android:padding="5dp"
+                    android:background="@drawable/rounded_green"
+                    android:textColor="@color/colorWhite"></TextView>
+
+                <TextView
+                    android:id="@+id/userVendorPanel"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:text="VendorPanel"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_margin="5dp"
+                    android:padding="5dp"
+                    android:background="@drawable/rounded_green"
+                    android:textColor="@color/colorWhite"></TextView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
                     android:id="@+id/upAffiliate"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="100dp"
                     android:layout_weight="1"
                     android:text="Affiliate Code"
@@ -270,7 +102,7 @@
 
                 <TextView
                     android:id="@+id/upFSeller"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="100dp"
                     android:layout_weight="1"
                     android:text="Favorite Sellers"
@@ -293,7 +125,7 @@
 
                 <TextView
                     android:id="@+id/upWithdraw"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="100dp"
                     android:layout_weight="1"
                     android:text="Withdraw"
@@ -307,7 +139,7 @@
 
                 <TextView
                     android:id="@+id/upMessage"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="100dp"
                     android:layout_weight="1"
                     android:text="Messages"
@@ -330,7 +162,7 @@
 
                 <TextView
                     android:id="@+id/upEditProfile"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="100dp"
                     android:layout_weight="1"
                     android:text="Edit Profile"
@@ -344,7 +176,7 @@
 
                 <TextView
                     android:id="@+id/upResetPassword"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="100dp"
                     android:layout_weight="1"
                     android:text="Reset Password"
@@ -360,6 +192,229 @@
 
 
         </LinearLayout>
+
+        ////
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="10dp"-->
+<!--            android:layout_marginTop="2dp"-->
+<!--            android:layout_marginRight="10dp"-->
+<!--            android:orientation="vertical"-->
+<!--            android:background="@drawable/rounded_editetext">-->
+
+<!--            <TextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Dashboard"-->
+<!--                android:textSize="25dp"-->
+<!--                android:gravity="center"-->
+<!--                android:textColor="@color/colorPrimary"></TextView>-->
+
+<!--            //Account Info-->
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="vertical">-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Account Information"-->
+<!--                    android:textSize="25dp"-->
+<!--                    android:padding="5dp"-->
+<!--                    android:textColor="@color/colorPrimary"></TextView>-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content">-->
+
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/ed_username"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:background="@drawable/rounded_editetext"-->
+<!--                        android:drawableLeft="@drawable/ic_perm_"-->
+<!--                        android:textColorHint="@color/colorGrey"-->
+<!--                        android:drawablePadding="10dp"-->
+<!--                        android:hint="Name"-->
+<!--                        android:padding="12dp"-->
+<!--                        android:textColor="@color/colorGrey2" />-->
+<!--                </LinearLayout>-->
+
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="15dp">-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/ed_email"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:background="@drawable/rounded_editetext"-->
+<!--                        android:drawableLeft="@drawable/ic_email"-->
+<!--                        android:textColorHint="@color/colorGrey"-->
+<!--                        android:drawablePadding="10dp"-->
+<!--                        android:hint="Name"-->
+<!--                        android:padding="12dp"-->
+<!--                        android:textColor="@color/colorGrey2" />-->
+<!--                </LinearLayout>-->
+
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="15dp"-->
+<!--                    android:layout_weight="1">-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/ed_alternatmob"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:background="@drawable/rounded_editetext"-->
+<!--                        android:drawableLeft="@drawable/ic_phone"-->
+<!--                        android:textColorHint="@color/colorGrey"-->
+<!--                        android:drawablePadding="10dp"-->
+<!--                        android:hint="Phone Number"-->
+<!--                        android:padding="12dp"-->
+<!--                        android:textColor="@color/colorGrey2" />-->
+<!--                </LinearLayout>-->
+
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="15dp">-->
+
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/city"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:background="@drawable/rounded_editetext"-->
+<!--                        android:drawableLeft="@drawable/ic_address"-->
+<!--                        android:drawablePadding="10dp"-->
+<!--                        android:hint="City"-->
+<!--                        android:padding="12dp"-->
+<!--                        android:textColor="@color/colorGrey2"-->
+<!--                        android:textColorHint="@color/colorGrey" />-->
+<!--                </LinearLayout>-->
+
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="15dp">-->
+
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/zip"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:background="@drawable/rounded_editetext"-->
+<!--                        android:drawableLeft="@drawable/ic_zip_icon"-->
+<!--                        android:textColorHint="@color/colorGrey"-->
+<!--                        android:drawablePadding="10dp"-->
+<!--                        android:hint="Zip"-->
+<!--                        android:padding="12dp"-->
+<!--                        android:textColor="@color/colorGrey2" />-->
+<!--                </LinearLayout>-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="15dp">-->
+
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/address"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:background="@drawable/rounded_editetext"-->
+<!--                        android:drawableLeft="@drawable/ic_address"-->
+<!--                        android:textColorHint="@color/colorGrey"-->
+<!--                        android:drawablePadding="10dp"-->
+<!--                        android:hint="Address"-->
+<!--                        android:padding="12dp"-->
+<!--                        android:textColor="@color/colorGrey2" />-->
+
+<!--            </LinearLayout>-->
+
+
+<!--            </LinearLayout>-->
+
+<!--            ///My Balance-->
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="vertical"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:background="@drawable/rounded_editetext">-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="My Balance"-->
+<!--                    android:textSize="25dp"-->
+<!--                    android:padding="5dp"-->
+<!--                    android:textColor="@color/colorPrimary"></TextView>-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:orientation="horizontal">-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="Affiliate Bonus: "-->
+<!--                        android:textSize="25dp"></TextView>-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/affiliateBonus"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginLeft="3dp"-->
+<!--                        android:hint="$0"-->
+<!--                        android:textSize="25dp"></TextView>-->
+
+<!--                </LinearLayout>-->
+
+<!--            </LinearLayout>-->
+
+<!--            //Recent order-->
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="5dp"-->
+<!--                android:orientation="vertical"-->
+<!--                android:background="@drawable/rounded_editetext">-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Recent Orders"-->
+<!--                    android:textSize="30dp"-->
+<!--                    android:padding="5dp"-->
+<!--                    android:textColor="@color/colorPrimary"></TextView>-->
+
+<!--                <androidx.recyclerview.widget.RecyclerView-->
+<!--                    android:layout_marginBottom="10dp"-->
+<!--                    android:id="@+id/recentOrderRV"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    tools:listitem="@layout/item_order"></androidx.recyclerview.widget.RecyclerView>-->
+
+
+<!--            </LinearLayout>-->
+
+
+<!--    </LinearLayout>-->
+
+
+
 
     </LinearLayout>
 

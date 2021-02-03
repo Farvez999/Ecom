@@ -4,8 +4,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
@@ -33,6 +35,8 @@ public class VendorWithdrawsActivity extends AppCompatActivity {
 
     SessionManager sessionManager;
 
+    private TextView vWNow;
+
     private RecyclerView wRecyclerView;
     private WithdhowAdapter wExampleAdapter;
     private ArrayList<WithdhowModel> wExampleList;
@@ -49,6 +53,15 @@ public class VendorWithdrawsActivity extends AppCompatActivity {
         setTitle("Withdraw");
 
         sessionManager = new SessionManager(this);
+
+        vWNow = findViewById(R.id.vWNow);
+        vWNow.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(VendorWithdrawsActivity.this,VendorWCreateActivity.class);
+                startActivity(intent);
+            }
+        });
 
         wRecyclerView = findViewById(R.id.vwRecyclerView);
         wRecyclerView.setHasFixedSize(true);

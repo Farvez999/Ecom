@@ -9,7 +9,22 @@
 <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="vertical"
+    android:layout_margin="5dp">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="15dp"
+        android:fontFamily="@font/coresans_cr_medium"
+        android:gravity="center"
+        android:padding="0dp"
+        android:text="Welcome Vendor Dashboard!"
+        android:textColor="@color/colorBalck"
+        android:textSize="21sp"
+        android:textStyle="bold" />
 
     <LinearLayout
     android:layout_width="match_parent"
@@ -24,7 +39,7 @@
 
         <TextView
             android:id="@+id/btn_orderPending"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="100dp"
             android:layout_weight="1"
             android:text="Orders Pending!"
@@ -38,11 +53,11 @@
 
         <TextView
             android:id="@+id/btn_orderProcessing"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="100dp"
             android:layout_weight="1"
             android:text="Orders Procsessing!"
-            android:textSize="20dp"
+            android:textSize="15dp"
             android:textStyle="bold"
             android:gravity="center"
             android:layout_margin="5dp"
@@ -60,11 +75,11 @@
 
         <TextView
             android:id="@+id/btn_orderCompleted"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="100dp"
             android:layout_weight="1"
             android:text="Orders Completed!"
-            android:textSize="20dp"
+            android:textSize="15dp"
             android:textStyle="bold"
             android:gravity="center"
             android:layout_margin="5dp"
@@ -74,7 +89,7 @@
 
         <TextView
             android:id="@+id/btn_orderProducts"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="100dp"
             android:layout_weight="1"
             android:text="Total Products!"
@@ -111,12 +126,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:background="@drawable/rounded_editetext">
+            android:background="@drawable/rounded_editetext2">
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Orders Pending!"
+                android:gravity="center"
                 android:textSize="25dp"
                 android:padding="5dp"
                 android:textColor="@color/colorPrimary"></TextView>
@@ -127,7 +143,7 @@
                 android:text="All Orders"
                 android:textSize="20dp"
                 android:padding="5dp"
-                android:textColor="@color/colorPrimary"></TextView>
+                android:textColor="@color/colorBalck"></TextView>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -203,12 +219,13 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:layout_marginTop="10dp"
-            android:background="@drawable/rounded_editetext">
+            android:background="@drawable/rounded_editetext2">
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Orders Procsessing!"
+                android:gravity="center"
                 android:textSize="25dp"
                 android:padding="5dp"
                 android:textColor="@color/colorPrimary"></TextView>
@@ -219,7 +236,7 @@
                 android:text="Orders Procsessing!"
                 android:textSize="20dp"
                 android:padding="5dp"
-                android:textColor="@color/colorPrimary"></TextView>
+                android:textColor="@color/colorBalck"></TextView>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -295,12 +312,13 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:layout_marginTop="10dp"
-            android:background="@drawable/rounded_editetext">
+            android:background="@drawable/rounded_editetext2">
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Orders Completed!"
+                android:gravity="center"
                 android:textSize="25dp"
                 android:padding="5dp"
                 android:textColor="@color/colorPrimary"></TextView>
@@ -311,7 +329,7 @@
                 android:text="All Completed Orders"
                 android:textSize="20dp"
                 android:padding="5dp"
-                android:textColor="@color/colorPrimary"></TextView>
+                android:textColor="@color/colorBalck"></TextView>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -370,7 +388,6 @@
 
     </LinearLayout>
 
-
     //Total Products!!
     <LinearLayout
         android:visibility="gone"
@@ -388,12 +405,13 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:layout_marginTop="10dp"
-            android:background="@drawable/rounded_editetext">
+            android:background="@drawable/rounded_editetext2">
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Total Products!!"
+                android:gravity="center"
                 android:textSize="25dp"
                 android:padding="5dp"
                 android:textColor="@color/colorPrimary"></TextView>
@@ -404,7 +422,7 @@
                 android:text="Products"
                 android:textSize="20dp"
                 android:padding="5dp"
-                android:textColor="@color/colorPrimary"></TextView>
+                android:textColor="@color/colorBalck"></TextView>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -462,6 +480,7 @@
 
 
     </LinearLayout>
+
 </RelativeLayout>
 
 

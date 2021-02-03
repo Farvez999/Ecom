@@ -40,7 +40,7 @@ public class VendorActivity extends AppCompatActivity {
 
     SessionManager sessionManager;
 
-    TextView vDashboard,vOrder,vProducts,vWithdraws,vBulkProductUpload,vSettings;
+    TextView vDashboard, vOrder, vProducts, vWithdraws, vBulkProductUpload, vSettings;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -105,7 +105,6 @@ public class VendorActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
 
 
     }

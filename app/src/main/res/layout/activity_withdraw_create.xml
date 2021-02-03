@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    tools:context="com.korearbazar.ecom.UserProfile.WithdrawCreateActivity">
+
+    //Withdraw Now
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/rounded_editetext2">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/coresans_cr_medium"
+            android:textColor="@color/colorPrimary"
+            android:textSize="21sp"
+            android:gravity="left"
+            android:layout_margin="5dp"
+            android:padding="0dp"
+            android:text="Withdraw Now"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Current Balance"
+                android:fontFamily="@font/coresans_cr_medium"
+                android:textColor="@color/colorBalck"
+                android:textSize="21sp"
+                android:padding="5dp"
+                android:gravity="left"></TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text=" "
+                android:background="@android:drawable/edit_text"
+                android:textSize="20dp"
+                android:padding="5dp"
+                android:textColor="@color/colorPrimary"></TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Withdraw Method *"
+                android:fontFamily="@font/coresans_cr_medium"
+                android:textColor="@color/colorBalck"
+                android:textSize="21sp"
+                android:padding="5dp"
+                android:gravity="left">></TextView>
+
+            <Spinner
+                android:id="@+id/spinner1"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <!--                    <TextView-->
+            <!--                        android:id="@+id/Sp"-->
+            <!--                        android:layout_width="match_parent"-->
+            <!--                        android:layout_height="wrap_content"-->
+            <!--                        android:layout_weight="1"-->
+            <!--                        android:text=""-->
+            <!--                        android:textSize="20dp"-->
+            <!--                        android:padding="5dp"-->
+            <!--                        android:textColor="@color/colorPrimary"></TextView>-->
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:text="Withdraw Method *"
+                android:fontFamily="@font/coresans_cr_medium"
+                android:textColor="@color/colorBalck"
+                android:textSize="21sp"
+                android:gravity="left">></TextView>
+
+
+            <EditText
+                android:id="@+id/Sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:text=""
+                android:textColor="@color/colorPrimary"
+                android:textSize="20dp"></EditText>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Withdraw Amount*"
+                android:padding="5dp"
+                android:fontFamily="@font/coresans_cr_medium"
+                android:textColor="@color/colorBalck"
+                android:textSize="21sp"
+                android:gravity="left">"></TextView>
+
+            <EditText
+                android:id="@+id/wAmmount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:background="@android:drawable/edit_text"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20dp"></EditText>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:text="Enter Account Email *"
+                android:fontFamily="@font/coresans_cr_medium"
+                android:textColor="@color/colorBalck"
+                android:textSize="21sp"
+                android:gravity="left">></TextView>
+
+            <EditText
+                android:id="@+id/eAEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:text=" "
+                android:background="@android:drawable/edit_text"
+                android:textSize="20dp"
+                android:textColor="@color/colorPrimary"></EditText>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:text="Additional Reference(Optional) *"
+                android:fontFamily="@font/coresans_cr_medium"
+                android:textColor="@color/colorBalck"
+                android:textSize="21sp"
+                android:gravity="left">></TextView>
+
+            <EditText
+                android:id="@+id/wReference"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:drawable/edit_text"
+                android:padding="5dp"
+                android:maxLines="4"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20dp"></EditText>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/withdraw"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:padding="5dp"
+            android:layout_margin="5dp"
+            android:text="Withdraw"
+            android:fontFamily="@font/coresans_cr_medium"
+            android:textColor="@color/colorWhite"
+            android:textSize="21sp"
+            android:gravity="center"
+            android:background="@drawable/rounded_green"></TextView>
+
+    </LinearLayout>
+
+</ScrollView>

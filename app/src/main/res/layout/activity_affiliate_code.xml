@@ -16,8 +16,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:layout_margin="10dp"
-            android:background="@drawable/rounded_editetext">
+            android:layout_margin="10dp">
 
 
             <LinearLayout
@@ -25,30 +24,37 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:padding="5dp"
-                android:layout_margin="5dp"
-                android:background="@drawable/rounded_editetext">
+                android:layout_margin="5dp">
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Affiliate Code"
-                    android:textSize="25dp"
-                    android:padding="5dp"
-                    android:textColor="@color/colorPrimary"></TextView>
+                    android:layout_marginTop="25dp"
+                    android:layout_marginBottom="25dp"
+                    android:fontFamily="@font/coresans_cr_medium"
+                    android:gravity="center"
+                    android:padding="0dp"
+                    android:text="Welcome User Affiliate Informations!"
+                    android:textColor="@color/colorBalck"
+                    android:textSize="21sp"
+                    android:textStyle="bold" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:fontFamily="@font/coresans_cr_medium"
+                    android:gravity="left"
+                    android:padding="0dp"
                     android:text="Your Affilate Link *"
-                    android:textSize="25dp"
-                    android:padding="5dp"
-                    android:textColor="@color/colorPrimary"></TextView>
+                    android:textColor="@color/colorBalck"
+                    android:textSize="21sp"
+                    android:textStyle="bold" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:background="@drawable/rounded_editetext">
+                    android:orientation="horizontal">
 
                     <TextView
                         android:id="@+id/copyaffilateLink"
@@ -65,6 +71,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text=""
+                        android:background="@android:drawable/editbox_background"
                         android:textIsSelectable="true"
                         android:textSize="20dp"
                         android:padding="5dp"
@@ -80,16 +87,22 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:fontFamily="@font/coresans_cr_medium"
+                    android:gravity="left"
+                    android:padding="0dp"
                     android:text="Affiliate Banner HTML Code * "
-                    android:textSize="25dp"
-                    android:padding="5dp"
-                    android:textColor="@color/colorPrimary"></TextView>
+                    android:textColor="@color/colorBalck"
+                    android:textSize="21sp"
+                    android:textStyle="bold" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:background="@drawable/rounded_editetext">
+                    android:orientation="horizontal">
 
                     <TextView
                         android:id="@+id/copyAffilatehtml"
@@ -106,6 +119,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text=""
+                        android:background="@android:drawable/editbox_background"
                         android:textIsSelectable="true"
                         android:textSize="20dp"
                         android:padding="5dp"
